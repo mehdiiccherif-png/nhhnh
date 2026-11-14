@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salon de coiffure Choisy-le-Roi | Le studio, 23 avenue Victor Hugo</title>
+<meta name="description" content="Le studio, salon de coiffure familial à Choisy-le-Roi : écoute, conseils et attention portée aux enfants. Note Google 4,8/5 sur 87 avis. 01 48 52 20 83.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HairSalon","name":"Le studio","telephone":"+33148522083","address":{"@type":"PostalAddress","streetAddress":"23 Avenue Victor Hugo","postalCode":"94600","addressLocality":"Choisy-le-Roi","addressCountry":"FR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","bestRating":"5","reviewCount":"87"}}</script>
+<style>
+:root{--bg:#f5f0e8;--ink:#1a1a1a;--muted:#5d554d;--sand:#e6dccd;--line:#d3c6b3;--brown:#7a5a43;--on-brown:#fff;--serif:"Instrument Serif",Georgia,serif;--sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--w:1180px;--gap:clamp(5rem,10vw,9rem)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171513;--ink:#efe8dd;--muted:#b3a99c;--sand:#25211d;--line:#3a342d;--brown:#c9a07c;--on-brown:#171513}}
+:root[data-theme="dark"]{--bg:#171513;--ink:#efe8dd;--muted:#b3a99c;--sand:#25211d;--line:#3a342d;--brown:#c9a07c;--on-brown:#171513}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.75 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}:focus-visible{outline:2px solid var(--brown);outline-offset:3px}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1;margin:0}
+p{margin:0 0 1.1rem;max-width:58ch}
+.wrap{width:min(100% - 2.5rem,var(--w));margin-inline:auto}
+.skip{position:absolute;left:-999px;background:var(--ink);color:var(--bg);padding:.7rem 1rem;z-index:99}.skip:focus{left:0}
+.btn{display:inline-block;padding:.9rem 1.6rem;border:1px solid var(--brown);background:var(--brown);color:var(--on-brown);text-decoration:none;font-size:.95rem;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--brown)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.line:hover{background:var(--ink);color:var(--bg)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:4.4rem}
+.logo{font-family:var(--serif);font-size:1.9rem;text-decoration:none;line-height:1}
+nav ul{display:flex;gap:2rem;list-style:none;margin:0;padding:0;font-size:.95rem}
+nav a{text-decoration:none;border-bottom:1px solid transparent}nav a:hover{border-color:var(--brown)}
+.bar .btn{padding:.55rem 1.1rem;font-size:.9rem}
+.mbtn{display:none;background:none;border:0;color:inherit;font:inherit;padding:.5rem;cursor:pointer}
+/* slots photo : ajoutez simplement <img src="..." alt="..."> dans la figure */
+.ph{position:relative;margin:0;background:var(--sand);overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph::after{content:attr(data-label);position:absolute;left:1rem;bottom:.9rem;font-size:.82rem;color:var(--muted)}
+.ph:has(img)::after{display:none}
+/* accueil */
+.hero{padding:clamp(2.5rem,6vw,5rem) 0 var(--gap)}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:end}
+.hero h1{font-size:clamp(4.6rem,13vw,10.5rem);letter-spacing:-.03em;margin-bottom:2rem}
+.hero .tag{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.2;font-style:italic;max-width:18ch;margin-bottom:2rem}
+.hero .ph{aspect-ratio:4/5}
+.rating{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;color:var(--muted)}
+.rating b{font-family:var(--serif);font-size:1.7rem;font-weight:400;color:var(--ink);margin-right:.4rem}
+/* sections éditoriales : titre à gauche, contenu à droite */
+.sec{padding:var(--gap) 0;border-top:1px solid var(--line)}
+.sec .wrap{display:grid;grid-template-columns:1fr 2fr;gap:clamp(2rem,6vw,6rem)}
+.sec h2{font-size:clamp(2.4rem,4.5vw,3.8rem)}
+.lead{font-family:var(--serif);font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1.25;max-width:30ch;margin-bottom:2rem}
+.facts{list-style:none;padding:0;margin:2rem 0 0;border-top:1px solid var(--ink)}.facts li{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:var(--gap)}
+.strip .ph{aspect-ratio:3/4}.strip .ph:nth-child(2){margin-top:3rem}
+.strip-wrap{width:min(100% - 2.5rem,var(--w));margin-inline:auto}
+dl{margin:0;border-top:1px solid var(--ink)}
+dl>div{display:grid;grid-template-columns:1fr 1.3fr auto;gap:1.5rem;padding:1.4rem 0;border-bottom:1px solid var(--line);align-items:baseline}
+dt{font-family:var(--serif);font-size:1.8rem;line-height:1.1}dd{margin:0;color:var(--muted)}dd.prix{min-width:4rem;text-align:right;color:var(--ink)}
+.note{margin-top:1.4rem;font-size:.92rem;color:var(--muted)}
+blockquote{margin:0 0 2.5rem;padding-top:1.4rem;border-top:1px solid var(--ink);max-width:40rem}
+blockquote:first-of-type{border-top-color:var(--brown)}
+blockquote p{font-family:var(--serif);font-size:clamp(1.5rem,2.4vw,1.95rem);line-height:1.3}
+cite{font-style:normal;font-size:.9rem;color:var(--muted)}
+.score{font-family:var(--serif);font-size:3.4rem;line-height:1;margin:1.5rem 0 .3rem}
+.actions{display:flex;flex-wrap:wrap;gap:.9rem;margin:2rem 0 1.4rem}
+address{font-style:normal;font-size:1.15rem;line-height:1.6}
+.k{font-family:var(--serif);font-size:1.4rem;margin:1.8rem 0 .3rem}
+footer{background:var(--ink);color:var(--bg);padding:3.5rem 0 calc(2rem + env(safe-area-inset-bottom,0px))}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem;font-size:.95rem}
+.foot .logo{font-size:1.8rem}.foot ul{list-style:none;margin:0;padding:0}.foot li{margin-bottom:.35rem}
+.foot a,.foot button{opacity:.85;text-decoration:none;background:none;border:0;color:inherit;font:inherit;padding:0;cursor:pointer}.foot a:hover,.foot button:hover{opacity:1;text-decoration:underline}
+.copy{margin:2.5rem 0 0;padding-top:1.2rem;border-top:1px solid #4a433c;font-size:.85rem;opacity:.7;max-width:none}
+dialog{max-width:620px;width:calc(100% - 2.5rem);border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:2rem}
+dialog::backdrop{background:rgba(0,0,0,.5)}dialog h2{font-size:2rem;margin-bottom:1rem}
+@media(max-width:860px){
+.mbtn{display:block}.bar .btn{display:none}
+nav{position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);display:none}nav.open{display:block}
+nav ul{flex-direction:column;gap:0;padding:.8rem 1.25rem}nav a{display:block;padding:.8rem 0}
+.hero-grid,.sec .wrap,.foot{grid-template-columns:1fr}.hero .ph{aspect-ratio:4/3}
+dl>div{grid-template-columns:1fr;gap:.3rem}dd.prix{text-align:left}
+.strip{grid-template-columns:1fr 1fr}.strip .ph:nth-child(2){margin-top:0}.strip .ph:nth-child(3){grid-column:span 2;aspect-ratio:16/9}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header><div class="wrap bar">
+ <a class="logo" href="#accueil" aria-label="Le studio, accueil">Le studio</a>
+ <nav id="menu" aria-label="Navigation principale"><ul>
+  <li><a href="#salon">Le salon</a></li><li><a href="#prestations">Prestations</a></li><li><a href="#avis">Avis</a></li><li><a href="#contact">Contact</a></li>
+ </ul></nav>
+ <a class="btn js-rdv" href="tel:+33148522083">Prendre rendez-vous</a>
+ <button class="mbtn" aria-expanded="false" aria-controls="menu">Menu</button>
+</div></header>
+
+<main id="contenu">
+<section class="hero" id="accueil"><div class="wrap hero-grid">
+ <div>
+  <h1>Le studio</h1>
+  <p class="tag">Prendre le temps d’écouter, avant de couper.</p>
+  <a class="btn js-rdv" href="tel:+33148522083">Prendre rendez-vous</a>
+  <p class="rating"><b>4,8/5</b> sur 87 avis Google<br>23 avenue Victor Hugo, Choisy-le-Roi</p>
+ </div>
+ <figure class="ph" data-label="Photo du salon"></figure>
+</div></section>
+
+<section class="sec" id="salon"><div class="wrap">
+ <h2>Le salon</h2>
+ <div>
+  <p class="lead">Un salon familial, où l’on se sent attendu.</p>
+  <p>Au Studio, chaque rendez-vous commence par une conversation : ce que vous aimez, ce qui vous gêne, ce que vous attendez de vos cheveux. Le reste suit naturellement.</p>
+  <p>Betty accueille ses clients avec chaleur et prend le temps nécessaire, y compris avec les plus jeunes. Beaucoup viennent depuis des années, souvent sur recommandation.</p>
+  <ul class="facts"><li>Un accueil personnalisé</li><li>Des conseils professionnels, adaptés à chacun</li><li>Une attention particulière portée aux enfants</li></ul>
+ </div>
+</div>
+<div class="strip-wrap"><div class="strip">
+ <figure class="ph" data-label="Intérieur du salon"></figure>
+ <figure class="ph" data-label="Fauteuils et miroirs"></figure>
+ <figure class="ph" data-label="Espace coiffure"></figure>
+</div></div></section>
+
+<section class="sec" id="prestations"><div class="wrap">
+ <h2>Prestations</h2>
+ <div>
+  <dl>
+   <div><dt>Coiffure</dt><dd>Pour vos occasions, selon vos envies.</dd><dd class="prix" data-prix></dd></div>
+   <div><dt>Coupes</dt><dd>Pensées avec vous, adaptées à vos cheveux et à votre quotidien.</dd><dd class="prix" data-prix></dd></div>
+   <div><dt>Brushings</dt><dd>Une mise en forme soignée.</dd><dd class="prix" data-prix></dd></div>
+   <div><dt>Soins capillaires</dt><dd>Choisis selon l’état de vos cheveux.</dd><dd class="prix" data-prix></dd></div>
+  </dl>
+  <!-- À MODIFIER : pour afficher un tarif, écrivez-le dans la balise <dd class="prix" data-prix></dd> de la ligne concernée. Exemple : <dd class="prix" data-prix>00 €</dd> -->
+  <p class="note">Tarifs communiqués au salon : 01 48 52 20 83.</p>
+ </div>
+</div></section>
+
+<section class="sec" id="avis"><div class="wrap">
+ <div><h2>Avis</h2><p class="score">4,8/5</p><p>sur 87 avis Google</p></div>
+ <div>
+  <blockquote><p>Betty est au top ! Aux petits soins et à l’écoute, elle prend beaucoup le temps avec mon fils de 2 ans. Je recommande fortement.</p><cite>Imane Indhammou</cite></blockquote>
+  <blockquote><p>Plusieurs années maintenant que je viens après recommandations et je ne suis jamais déçue. Betty sait accueillir chaleureusement chaque client et être à l’écoute de ses demandes et besoins.</p><cite>Victoire Lafon</cite></blockquote>
+ </div>
+</div></section>
+
+<section class="sec" id="contact"><div class="wrap">
+ <h2>Contact</h2>
+ <div>
+  <address>Le studio<br>23 avenue Victor Hugo<br>94600 Choisy-le-Roi</address>
+  <p class="k">Téléphone</p><p><a href="tel:+33148522083">01 48 52 20 83</a></p>
+  <p class="k">Horaires</p>
+  <!-- À MODIFIER : remplacez la phrase suivante par vos horaires, par exemple <p>Mardi – vendredi : 00h00 – 00h00</p> -->
+  <p>Horaires communiqués par téléphone.</p>
+  <div class="actions">
+   <a class="btn js-rdv" href="tel:+33148522083">Prendre rendez-vous</a>
+   <a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=23+Avenue+Victor+Hugo+94600+Choisy-le-Roi" target="_blank" rel="noopener">Itinéraire</a>
+   <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Le+studio+23+Avenue+Victor+Hugo+94600+Choisy-le-Roi" target="_blank" rel="noopener">Voir sur Google Maps</a>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="foot">
+  <div><a class="logo" href="#accueil">Le studio</a><p style="margin-top:1rem">23 avenue Victor Hugo<br>94600 Choisy-le-Roi<br><a href="tel:+33148522083">01 48 52 20 83</a></p></div>
+  <nav aria-label="Pied de page"><ul><li><a href="#salon">Le salon</a></li><li><a href="#prestations">Prestations</a></li><li><a href="#avis">Avis</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+  <ul><li><button data-open="ml">Mentions légales</button></li><li><button data-open="pc">Politique de confidentialité</button></li></ul>
+ </div>
+ <p class="copy">© <span id="y">2026</span> Le studio. Tous droits réservés.</p>
+</div></footer>
+
+<dialog id="ml"><h2>Mentions légales</h2><p>Le studio, 23 avenue Victor Hugo, 94600 Choisy-le-Roi. Téléphone : 01 48 52 20 83.</p><p>Responsable de la publication : [à compléter]. SIRET : [à compléter]. Hébergeur : [à compléter].</p><p>Les textes et photographies de ce site sont la propriété de Le studio.</p><button class="btn line" data-close>Fermer</button></dialog>
+<dialog id="pc"><h2>Politique de confidentialité</h2><p>Ce site ne comporte ni formulaire, ni compte client, ni outil de suivi : aucune donnée personnelle n’est collectée par le site.</p><p>Les polices (Google Fonts) sont fournies par Google, qui peut traiter votre adresse IP au chargement. Les liens vers Google Maps ouvrent un service Google distinct.</p><p>Pour toute question : 01 48 52 20 83.</p><button class="btn line" data-close>Fermer</button></dialog>
+
+<script>
+/* CONFIGURATION : collez ici le lien officiel de réservation du salon (ex. "https://..."). Tant qu'il est vide, « Prendre rendez-vous » lance un appel. */
+var BOOKING_URL = "";
+document.querySelectorAll('.js-rdv').forEach(function(a){if(BOOKING_URL){a.href=BOOKING_URL;a.target='_blank';a.rel='noopener'}});
+var b=document.querySelector('.mbtn'),n=document.getElementById('menu');
+b.addEventListener('click',function(){b.setAttribute('aria-expanded',n.classList.toggle('open'))});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+document.querySelectorAll('[data-open]').forEach(function(x){x.addEventListener('click',function(){document.getElementById(x.dataset.open).showModal()})});
+document.querySelectorAll('[data-close]').forEach(function(x){x.addEventListener('click',function(){x.closest('dialog').close()})});
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
